@@ -1,0 +1,11 @@
+{
+  "name": "neton-cordova-systemboot-info",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "neton-cordova-systemboot-info",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Plugin que retorna a informação do tempo em milisegundos do último boot do sistema"
+}

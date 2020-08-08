@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="neton-cordova-systemboot-info"
+    version="1.0.0">
+    <name>Net On Cordova System Boot Info</name>
+    <description>Plugin que retorna a informação do tempo em milisegundos do último boot do sistema</description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/oaugustus/neton-cordova-systemboot-info.git</repo>
+    <issue>https://github.com/oaugustus/neton-cordova-systemboot-info/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/plugin.js" name="plugin">
+        <runs/>
+        <clobbers target="SystemBootInfo" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="SystemBootInfo">
+          <param name="android-package" value="br.com.neton.SystemBootInfo" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/br/com/neton/SystemBootInfo.java" target-dir="src/br/com/neton/" />
+    </platform>
+</plugin>
