@@ -13,7 +13,6 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Build;
 import android.content.Context;
-import com.google.android.play.core.tasks.Task;
 import android.app.Activity;
 import android.content.IntentSender;
 
